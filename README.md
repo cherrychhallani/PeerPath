@@ -13,21 +13,21 @@ PeerPath is a web-based platform designed to facilitate easy and efficient commu
 - 📚 **Database**: MongoDB
 
 ## 🛠️ Installation & Setup
-1. 📝 Clone the repository:
+1. 📝 **Cloning the repository:**
    ```sh
    git clone https://github.com/your-repo/peerpath.git
-   cd peerpath
    ```
-2. 💪 Install dependencies:
+2. 💪 **Navigate to backend and install dependencies:**
    ```sh
+   cd backend
+   cd app
    npm install
-   ```
-3. 🌟 Start the server:
-   ```sh
    npm start
    ```
-4. 💻 Open the application in your browser.
+3. 💻 **Open the application in your browser:**
+   ```
+   Go to http://localhost:3000/
+   ```
 
 ## 📢 Contact
 For any inquiries or suggestions, feel free to reach out via email at 📧 [cherrychhallani11@gmail.com](mailto:cherrychhallani11@gmail.com).
-
