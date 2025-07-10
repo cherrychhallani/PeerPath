@@ -7,10 +7,11 @@ import Footer from './Footer';
 function Home() {
   return (
     <div>
-      <Header />
       <Slider />
+      <br>
+      </br>
+      <br></br>
       <Content />
-      <Footer />
     </div>
   );
 }

@@ -1,5 +1,5 @@
 import React from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, Link } from 'react-router-dom';
 import '../styles/header.css';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -9,7 +9,7 @@ function Header() {
   const navigate = useNavigate();
 
   const goToSignup = () => {
-    navigate('/signup');
+    navigate('/login');
   };
 
   return (
@@ -17,9 +17,9 @@ function Header() {
       <section>
         <div id="container">
           <div id="logo">
-            <a href="/">
+            <Link to="/">
               <img src="/img/image.png" alt="logo" width="150px" />
-            </a>
+            </Link>
           </div>
 
           <div id="search">
@@ -28,11 +28,11 @@ function Header() {
           </div>
 
           <div id="collection">
-            <div id="CP"><a href="/CP">CP</a></div>
-            <div id="DEVELOPEMENT"><a href="/DEVELOPMENT">DEVELOPEMENT</a></div>
-            <div id="ACADEMIC"><a href="/ACADEMICS">ACADEMICS</a></div>
-            <div id="INTERNS"><a href="/INTERN">INTERN SPECIALIST</a></div>
-            <div id="OTHERS"><a href="/OTHERS">OTHERS</a></div>
+            <div id="CP"><Link to="/CP">CP</Link></div>
+            <div id="DEVELOPMENT"><Link to="/DEVELOPMENT">DEVELOPMENT</Link></div>
+            <div id="ACADEMICS"><Link to="/ACADEMICS">ACADEMICS</Link></div>
+            <div id="INTERN"><Link to="/INTERN">INTERN SPECIALIST</Link></div>
+            <div id="OTHERS"><Link to="/OTHERS">OTHERS</Link></div>
           </div>
 
           <div id="user" onClick={goToSignup} style={{ cursor: 'pointer' }}>
